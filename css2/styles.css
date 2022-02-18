@@ -1,0 +1,167 @@
+body {
+    background: white;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100rem 93.75rem;        
+}
+
+header {
+    background: white;
+    position: relative;
+    opacity: 80%;
+    width: 100%;
+}
+
+.borde {
+    border-radius: 2rem;
+    border: solid 3px black;
+    width: 100%;
+    justify-content: center;
+    object-position: center;
+    position: relative;
+    justify-self: center;
+}
+
+h1 {
+    color: black;
+    border: solid 2px white;
+}
+
+.imgpadre{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border: 2px solid white;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.imghijo{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: auto;
+    justify-content: center;
+    opacity: 90%;
+}
+
+@media only screen and (min-width: 1024px){
+    #mobile {
+    justify-content: center;
+    background-color: white;
+}
+}
+
+@media only screen and (min-width: 320px){
+    #mobile {
+    justify-content: center;
+    background-color: white;
+    grid-template-rows: 20% auto 80%;
+    grid-template-areas: "nav header header"
+                         "nav section aside"
+                         "nav section aside"
+                         "nav footer footer";   
+}
+}
+
+@media only screen and (min-width: 720px){
+    #mobile {
+    justify-content: center;
+    background-color: transparent;
+    grid-template-rows: 20% auto 80%;
+    grid-template-areas: "nav header header"
+                         "nav section aside"
+                         "nav section aside"
+                         "nav footer footer";   
+}
+}
+
+
+
+@media only screen and (min-width: 1024px){
+
+#gridpadre {
+    justify-content: center;
+    height: 100vh;
+    display: grid;
+    background-color: yellowgreen;
+    grid-template-columns: 100px 1fr 1fr 75px;
+    grid-template-rows: 20% auto 80%;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    margin: 0;
+    grid-template-areas: "nav header header"
+                         "nav section aside"
+                         "nav section aside"
+                         "nav footer footer";    
+}
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section {
+    grid-area: section;
+}
+
+section {
+    grid-area: section;
+}
+
+aside {
+    grid-area: aside;
+}
+
+
+.menu > li {
+    display: inline-flex;
+    padding: 2px 5px;
+    margin: 1px;
+}
+
+.menu > li> a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    -webkit-text-stroke: 0.4px black;
+    -webkit-text-fill-color: rgb(22, 26, 24);
+}
+
+.menu li a:hover{
+    font-style: italic;
+    color: white;
+    opacity: 80%;
+}
+
+.centrar {
+    position: relative;
+    top: auto;
+    left: 290px;
+}
+
+.zoomin:hover {
+    transition: 5s;
+    height: 140px;
+    width: 140px;
+}
+
+.white:hover {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 50%;
+    transition: 1s;
+    opacity: 90%;
+    height: 260px;
+    width: 310px;
+}

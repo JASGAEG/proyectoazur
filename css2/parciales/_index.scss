@@ -1,0 +1,32 @@
+.centrarlo {
+    text-align: center;
+    display: block;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.izquierda {
+    text-align: start;
+    display: flex;
+    align-self: start;
+    justify-content: start;
+    margin: auto;
+}
+
+.derecha {
+    text-align: end;
+    display: block;
+    align-self: end;
+    justify-content: end;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.arriba {
+    justify-self: center;
+    margin-top: auto;
+    text-align: center;
+    object-position: center;
+
+}
