@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css2/main.css">
 </head>
 <body id="mobile">
-    <header class="arriba">
+    <header style="z-index: 100" class="arriba">
         <nav>
             <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
@@ -21,13 +21,18 @@
                 <li><a href="../pages/Contacto.html"> Contacto</a></li>   
             </ul>               
         </nav>
+    </header>
 
-            <div class="centrarlo"><img class="zoomin" 
-                width="100" 
-                height="100"
-                src="../Multimedia/Logo.png" alt="Logo">
-                <h1>Azur Prime Steakhouse</h1>
-            </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="centrarlo"><img class="zoomin" 
+            width="100" 
+            height="100"
+            src="../Multimedia/Logo.png" alt="Logo">
+        </div>
             <div class="derecha">
                 <a href="https://www.facebook.com/"><img
                 width="30"
@@ -42,31 +47,48 @@
                 height="30" 
                 src="../Multimedia/twitter.png" alt="Twitter"></a>
             </div>
-    </header>
 
-    <li class="section time centrarlo imgpadre">
-        <iframe 
-        src="https://player.vimeo.com/video/337491339?h=319ed0515a&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    </li>
+            <div class="centrarlo">
+                <video onloadedmetadata="this.muted=true" autoplay loop width="100%"> 
+                <source src="../Multimedia/video2.mp4">
+            </video>
+                </div>
+        
+        
+            <button style="z-index: 100" class="flotante">
+                <a href="../index.html"> <img src="../Multimedia/wa.png" width="40" height="40"></a>
+            </button>
 
-    <h3 class="centrarlo">Realiza tu evento con nosotros, nos respaldan más de 5 años brindando servicio de excelencia.</h3>
+    <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: azure;" class="centrarlo">Realiza tu evento con nosotros, nos respaldan más de 5 años brindando servicio de excelencia.</h3>
 
-    <li class="section time centrarlo imghijo">
-        <img src="../Multimedia/Galeria/Foto4.jpg" alt=""
+    <li class="centrarlo imghijo">
+        <img class="entrada" src="../Multimedia/Eventos/1.jpg" alt=""
         height="300"
         width="300">
-        <img src="../Multimedia/Galeria/Foto5.jpg" alt=""
+        <img class="entrada" src="../Multimedia/Eventos/2.jpg" alt=""
         height="300"
         width="300">
-        <img src="../Multimedia/Galeria/Foto6.jpg" alt=""
+        <img class="entrada" src="../Multimedia/Eventos/3.jpg" alt=""
+        height="300"
+        width="300"> 
+        <img class="entrada" src="../Multimedia/Eventos/4.jpg" alt=""
+        height="300"
+        width="300"> 
+        <img class="entrada" src="../Multimedia/Eventos/5.jpg" alt=""
+        height="300"
+        width="300"> 
+        <img class="entrada" src="../Multimedia/Eventos/6.jpg" alt=""
+        height="300"
+        width="300"> 
+        <img class="entrada" src="../Multimedia/Eventos/7.jpg" alt=""
+        height="300"
+        width="300"> 
+        <img class="entrada" src="../Multimedia/Eventos/8.jpg" alt=""
         height="300"
         width="300"> 
     </li>
     <footer>
-        <h4 class="centrarlo">©Copyrigth</h4>
-        <p class="derecha">Dirección: </p>
-        <p class="derecha">Carretera a ningún lugar s/n </p>
-        <p class="derecha">Col. Alguna </p>
+        <p style="text-align: center;">&#169JavierSosa</p>
     </footer>
 </body>
 </html>

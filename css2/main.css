@@ -3,16 +3,11 @@
   opacity: 80%;
   display: block;
   width: 65%;
-  text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   border-radius: 5rem;
-  margin: 60px 220px;
-  padding: 35px 10px;
   border: solid 3px black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
 }
 
 .time:hover {
@@ -33,16 +28,20 @@
   -ms-grid-column-align: center;
       justify-self: center;
   padding: 10px 15px;
-  margin: 2px;
+  margin: 0;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 .tiempo:hover {
+  margin: 0;
   -webkit-transition: 1s;
   transition: 1s;
-  width: 23%;
-  height: 2%;
-  background-color: white;
-  border: teal;
+  font-size: 25px;
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+  -webkit-filter: none;
+          filter: none;
 }
 
 .centrarlo {
@@ -68,8 +67,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  position: absolute;
-  margin: 40px 20px;
+  margin: auto;
 }
 
 .derecha {
@@ -81,8 +79,8 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 0;
+  top: .1em;
 }
 
 .arriba {

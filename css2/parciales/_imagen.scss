@@ -5,13 +5,14 @@
     text-align: center;
     justify-self: center;
     padding: 10px 15px;
-    margin: 2px;
+    margin: 0;
+    filter: grayscale(1);
 }
 
 .tiempo:hover {
+    margin: 0;
     transition: 1s;
-    width: 23%;
-    height: 2%;
-    background-color: darkcyan;
-    border: teal;
+    font-size: 25px;
+    filter: brightness(115%);
+    filter: none;
 }

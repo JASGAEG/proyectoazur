@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css2/main.css">
 </head>
 <body id="mobile" class="hi">
-    <header class="arriba">
+    <header style="z-index: 100" class="arriba">
         <nav>
             <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
@@ -21,13 +21,17 @@
                 <li><a href="../pages/Contacto.html"> Contacto</a></li>   
             </ul>               
         </nav>
-
-            <div class="centrarlo"><img class="zoomin" 
-                width="100" 
-                height="100"
-                src="../Multimedia/Logo.png" alt="Logo">
-                <h1>Azur Prime Steakhouse</h1>
-            </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="centrarlo"><img class="zoomin" 
+        width="100" 
+        height="100"
+        src="../Multimedia/Logo.png" alt="Logo">
+    </div>
             <div class="derecha">
                 <a href="https://www.facebook.com/"><img
                 width="30"
@@ -42,8 +46,12 @@
                 height="30" 
                 src="../Multimedia/twitter.png" alt="Twitter"></a>
             </div>
-    </header>
+
+    <button style="z-index: 100" class="flotante">
+        <a href="../index.html"> <img src="../Multimedia/wa.png" width="40" height="40"></a>
+    </button>
     <br>
+    <div class="contenedor">
     <h3>Contactanos:</h3>
     <form action="" method="get" enctype="text/plain">
         <div>
@@ -62,11 +70,9 @@
         <br>
         <input type="submit" value="Enviar">
         <input type="reset" value="Reset">
+    </div>
         <footer>
-            <h4 class="centrarlo">©Copyrigth</h4>
-        <p class="derecha">Dirección: </p>
-        <p class="derecha">Carretera a ningún lugar s/n </p>
-        <p class="derecha">Col. Alguna </p>
+            <p style="text-align: center;">&#169JavierSosa</p>
         </footer>
 </body>
 </html>

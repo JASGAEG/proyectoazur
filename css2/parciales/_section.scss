@@ -6,6 +6,7 @@
     border-radius: 5rem;
     border: solid 3px black;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .time:hover {
@@ -13,12 +14,4 @@
     background-color: lightcyan;
     border-radius: 0%;
     border-color: lightseagreen;
-}
-
-.centrarlo {
-    text-align: center;
-    display: block;
-    align-self: center;
-    justify-content: center;
-    justify-self: center;
 }

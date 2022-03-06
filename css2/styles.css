@@ -1,15 +1,43 @@
 body {
-    background: white;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100rem 93.75rem;        
+    background: #333;    
 }
 
 header {
     background: white;
-    position: relative;
     opacity: 80%;
     width: 100%;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    justify-content: center;
+}
+
+.flotante {
+    position: fixed;
+    background: transparent;
+    border: none;
+    top: 89%;
+    left: 89%;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    filter: grayscale();
+}
+
+.flotante:hover {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    object-position: center;
+    background-color: rgb(38, 175, 61);
+    border-radius: 20px;
+    border: 5px none;
+    font-size: 20px;
+    filter: none;
 }
 
 .borde {
@@ -22,12 +50,9 @@ header {
     justify-self: center;
 }
 
-h1 {
-    color: black;
-    border: solid 2px white;
-}
 
 .imgpadre{
+    position: inherit;
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -42,7 +67,7 @@ h1 {
     flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
-    align-self: auto;
+    align-self: center;
     justify-content: center;
     opacity: 90%;
 }
@@ -50,14 +75,12 @@ h1 {
 @media only screen and (min-width: 1024px){
     #mobile {
     justify-content: center;
-    background-color: white;
 }
 }
 
 @media only screen and (min-width: 320px){
     #mobile {
     justify-content: center;
-    background-color: white;
     grid-template-rows: 20% auto 80%;
     grid-template-areas: "nav header header"
                          "nav section aside"
@@ -69,7 +92,6 @@ h1 {
 @media only screen and (min-width: 720px){
     #mobile {
     justify-content: center;
-    background-color: transparent;
     grid-template-rows: 20% auto 80%;
     grid-template-areas: "nav header header"
                          "nav section aside"
@@ -126,22 +148,26 @@ aside {
 
 .menu > li {
     display: inline-flex;
-    padding: 2px 5px;
-    margin: 1px;
+    padding: 0.1rem ;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    border: 2px none;
 }
 
 .menu > li> a {
     display: flex;
     color: white;
     text-decoration: none;
-    -webkit-text-stroke: 0.4px black;
     -webkit-text-fill-color: rgb(22, 26, 24);
 }
 
 .menu li a:hover{
     font-style: italic;
     color: white;
-    opacity: 80%;
+    border: solid 2px none;
+    background-color: #969494;
+    transition: all 0.2s linear;
+    border-radius: 4px;
 }
 
 .centrar {
@@ -151,17 +177,48 @@ aside {
 }
 
 .zoomin:hover {
-    transition: 5s;
-    height: 140px;
-    width: 140px;
+    transition: 1s;
+    height: 120px;
+    width: 120px;
+    filter: grayscale(1);
 }
 
 .white:hover {
-    background-color: white;
-    border: 5px solid white;
+    border: 2px solid none;
     border-radius: 50%;
-    transition: 1s;
+    display: inline-block;
+    transition: 0.5s;
     opacity: 90%;
-    height: 260px;
-    width: 310px;
+    filter: none;
+    justify-content: center;
+}
+
+.grises{
+    filter: grayscale(1);
+}
+
+.color:hover {
+    filter: none;
+    transition: 1s;
+}
+
+.contenedor {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    background-color: white;
+    opacity: 80%;
+}
+
+.entrada {
+    filter: grayscale(1);
+    transform: rotateY(10deg);
+}
+
+.entrada:hover {
+    transform: rotateY(0deg);
+    transition: 3s;
+    filter: none;
 }
